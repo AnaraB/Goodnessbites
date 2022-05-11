@@ -1,0 +1,292 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: aliceblue;
+
+
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+
+
+
+h1,
+h2 {
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar .logo {
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: 'Satisfy', cursive;
+
+}
+
+.navbar {
+    background-color: crimson;
+    color: black;
+    height: 70px;
+    /* visota navbar */
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    /* align center (cross axis) from 70px height */
+
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+/*header section*/
+
+.header {
+    color: black;
+    min-height: 400px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.title-image {
+    max-width: 700px;
+    padding: 5% 7%;
+    float: right;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*Products section*/
+
+.range .container {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 5%;
+
+
+}
+
+.range h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 5%;
+}
+
+.food-item img {
+    flex: 1;
+    justify-content: space-evenly;
+    margin: 0 10px;
+}
+
+/*   background: #0a51cc;
+  color: #fff;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px */
+
+
+}
+
+.products h2 {}
+
+
+
+.food-item img {
+
+    max-height: 350px;
+    max-width: 380px;
+
+}
+
+.food-item h3 {
+    float: center;
+    text-decoration: dotted;
+    font-family: 'Satisfy', cursive;
+    font-size: 25px;
+
+
+}
+
+.container .food-item {
+    border: 0.5px solid #B2967D;
+
+}
+
+
+
+/* our team section */
+
+
+
+.box .team {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 5% 10%;
+
+
+}
+
+.box h1 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px 0;
+
+}
+
+
+
+
+
+
+
+.teammate img {
+    max-height: 350px;
+    max-width: 380px;
+    flex: 1;
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+}
+
+.teammate h3 {
+    margin: 0;
+    padding: 10px;
+    font-size: medium;
+}
+
+
+
+
+
+
+
+
+
+/*contact us*/
+
+.social-media {
+    background-color: crimson;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border-top: 0.5px solid #B2967D;
+}
+
+#social-media-icon {
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+
+}
+
+#social-media-icon:hover {
+    width: 62px;
+    height: 62px;
+    padding: 10px;
+}
+
+
+/*-----------*/
+.footer {
+    background-color: crimson;
+    padding: 2% 5%;
+}
+
+.footer p {
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+    width: 100%;
+
+
+}
+
+
+
+
+/*----Mobile responsive ---*/
+
+@media (max-width:1024px) {
+
+
+    .header h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        padding: 3%;
+    }
+
+    .title-image {
+
+        padding: 5% auto;
+
+    }
+
+
+    .box .team,
+    .header .container,
+    .container .food-item {
+        text-align: center;
+        flex-wrap: wrap;
+        border: none;
+        flex-direction: column;
+    }
+
+    .navbar .container {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+
+}
